@@ -74,6 +74,78 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Participants list - improved layout */
+.participants-container {
+  margin-top: 10px;
+}
+
+.participants-list {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #eef2ff;
+  box-shadow: 0 1px 0 rgba(10, 20, 40, 0.02);
+  transition: background-color 0.15s ease;
+}
+
+.participant-item:hover {
+  background: #f4f8ff;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8f0ff, #d6e4ff);
+  color: #08306b;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid #d6e1ff;
+}
+
+.participant-name {
+  font-size: 14px;
+  color: #09305a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participants-list .extra.hidden {
+  display: none;
+}
+
+/* Show-more button */
+.show-more {
+  margin-top: 8px;
+  background: transparent;
+  border: 1px dashed #cfd8ff;
+  color: #1a237e;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.show-more:hover {
+  background: #eef2ff;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
